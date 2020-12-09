@@ -1,6 +1,11 @@
-const checkForSpam = function(message) {
-  // твой код
-};
+const checkForSpam = function (message) {
+  const messageToLowerCase = message.toLowerCase();
+  
+  const result = messageToLowerCase.includes('spam') || messageToLowerCase.includes('sale');
+  return result;      
+    
+  
+ };
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
